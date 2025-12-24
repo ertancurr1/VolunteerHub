@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VolunteerHub.Views.VolunteersPage"
+             Title="Volunteers"
+             BackgroundColor="#ECF0F1">
+
+    <Grid RowDefinitions="Auto,Auto,*" Padding="20" RowSpacing="15">
+
+        <!-- Header -->
+        <VerticalStackLayout Grid.Row="0" Spacing="5">
+            <Label Text="Volunteer Management"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="#2C3E50" />
+            <Label Text="View and manage volunteer profiles"
+                   FontSize="14"
+                   TextColor="#7F8C8D" />
+        </VerticalStackLayout>
+
+        <!-- Search and Add Section -->
+        <Grid Grid.Row="1" ColumnDefinitions="*,Auto" ColumnSpacing="10">
+
+            <!-- Search Bar -->
+            <Frame Grid.Column="0"
+                   BackgroundColor="White"
+                   CornerRadius="8"
+                   HasShadow="False"
+                   BorderColor="#BDC3C7"
+                   Padding="0">
+                <SearchBar x:Name="SearchBar"
+                           Placeholder="Search volunteers..."
+                           TextColor="#2C3E50"
+                           PlaceholderColor="#95A5A6"
+                           BackgroundColor="Transparent"
+                           SearchButtonPressed="OnSearchPressed"
+                           TextChanged="OnSearchTextChanged" />
+            </Frame>
+
+            <!-- Add Button -->
+            <Button Grid.Column="1"
+                    Text="+ Add Volunteer"
+                    BackgroundColor="#3498DB"
+                    TextColor="White"
+                    FontSize="14"
+                    FontAttributes="Bold"
+                    CornerRadius="8"
+                    Clicked="OnAddVolunteerClicked"
+                    WidthRequest="150" />
+        </Grid>
+
+        <!-- Volunteers List -->
+        <CollectionView Grid.Row="2"
+                        x:Name="VolunteersCollectionView"
+                        SelectionMode="None">
+
+            <CollectionView.EmptyView>
+                <ContentView>
+                    <VerticalStackLayout HorizontalOptions="Center" 
+                                        VerticalOptions="Center"
+                                        Spacing="10">
+                        <Label Text="No volunteers found"
+                               FontSize="18"
+                               TextColor="#95A5A6"
+                               HorizontalOptions="Center" />
+                        <Label Text="Click 'Add Volunteer' to get started"
+                               FontSize="14"
+                               TextColor="#BDC3C7"
+                               HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </ContentView>
+            </CollectionView.EmptyView>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Margin="0,0,0,10" 
+                           Padding="20"
+                           BackgroundColor="White"
+                           CornerRadius="8"
+                           HasShadow="False"
+                           BorderColor="#BDC3C7">
+
+                        <Grid ColumnDefinitions="Auto,*,Auto" RowDefinitions="Auto,Auto,Auto,Auto" ColumnSpacing="15">
+
+                            <!-- Status Indicator -->
+                            <BoxView Grid.Row="0" Grid.Column="0" Grid.RowSpan="3"
+                                     WidthRequest="4"
+                                     CornerRadius="2"
+                                     Color="{Binding Status, Converter={StaticResource StatusColorConverter}}"
+                                     VerticalOptions="FillAndExpand" />
+
+                            <!-- Name -->
+                            <Label Grid.Row="0" Grid.Column="1"
+                                   FontSize="18"
+                                   FontAttributes="Bold"
+                                   TextColor="#2C3E50">
+                                <Label.Text>
+                                    <MultiBinding StringFormat="{}{0} {1}">
+                                        <Binding Path="FirstName" />
+                                        <Binding Path="LastName" />
+                                    </MultiBinding>
+                                </Label.Text>
+                            </Label>
+
+                            <!-- Status Badge -->
+                            <Frame Grid.Row="0" Grid.Column="2"
+                                   Padding="8,4"
+                                   CornerRadius="4"
+                                   HasShadow="False"
+                                   BackgroundColor="{Binding Status, Converter={StaticResource StatusColorConverter}}">
+                                <Label Text="{Binding Status}"
+                                       FontSize="11"
+                                       TextColor="White"
+                                       FontAttributes="Bold" />
+                            </Frame>
+
+                            <!-- Contact Info -->
+                            <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
+                                   FontSize="14"
+                                   TextColor="#7F8C8D"
+                                   Margin="0,5,0,0">
+                                <Label.Text>
+                                    <MultiBinding StringFormat="{}Email: {0} | Phone: {1}">
+                                        <Binding Path="Email" />
+                                        <Binding Path="Phone" />
+                                    </MultiBinding>
+                                </Label.Text>
+                            </Label>
+
+                            <!-- Skills -->
+                            <Label Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"
+                                   Text="{Binding Skills, StringFormat='Skills: {0}'}"
+                                   FontSize="14"
+                                   TextColor="#7F8C8D"
+                                   LineBreakMode="TailTruncation"
+                                   MaxLines="1"
+                                   Margin="0,2,0,0" />
+
+                            <!-- Action Buttons -->
+                            <HorizontalStackLayout Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"
+                                                  Spacing="10"
+                                                  Margin="0,15,0,0">
+
+                                <Button Text="Edit"
+                                        BackgroundColor="#3498DB"
+                                        TextColor="White"
+                                        FontSize="12"
+                                        FontAttributes="Bold"
+                                        CornerRadius="4"
+                                        Padding="15,8"
+                                        Clicked="OnEditVolunteerClicked"
+                                        CommandParameter="{Binding .}" />
+
+                                <Button Text="Delete"
+                                        BackgroundColor="#E74C3C"
+                                        TextColor="White"
+                                        FontSize="12"
+                                        FontAttributes="Bold"
+                                        CornerRadius="4"
+                                        Padding="15,8"
+                                        Clicked="OnDeleteVolunteerClicked"
+                                        CommandParameter="{Binding .}" />
+
+                                <Button Text="View Details"
+                                        BackgroundColor="#95A5A6"
+                                        TextColor="White"
+                                        FontSize="12"
+                                        FontAttributes="Bold"
+                                        CornerRadius="4"
+                                        Padding="15,8"
+                                        Clicked="OnViewDetailsClicked"
+                                        CommandParameter="{Binding .}" />
+                            </HorizontalStackLayout>
+
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </Grid>
+
+</ContentPage>

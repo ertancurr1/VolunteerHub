@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VolunteerHub.Views.ExportPage"
+             Title="Export Reports"
+             BackgroundColor="#ECF0F1">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="25">
+
+            <!-- Header -->
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Export Reports"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       TextColor="#2C3E50" />
+                <Label Text="Export your data to CSV or JSON format for backup or analysis"
+                       FontSize="14"
+                       TextColor="#7F8C8D" />
+            </VerticalStackLayout>
+
+            <!-- Export Volunteers Section -->
+            <Frame BackgroundColor="White"
+                   CornerRadius="8"
+                   HasShadow="False"
+                   BorderColor="#BDC3C7"
+                   Padding="20">
+                <VerticalStackLayout Spacing="15">
+                    <HorizontalStackLayout Spacing="10">
+                        <BoxView WidthRequest="4"
+                                 HeightRequest="24"
+                                 Color="#3498DB"
+                                 CornerRadius="2"
+                                 VerticalOptions="Center" />
+                        <Label Text="Volunteers Data"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50"
+                               VerticalOptions="Center" />
+                    </HorizontalStackLayout>
+
+                    <Label Text="Export all volunteer information including contact details, skills, and status."
+                           FontSize="14"
+                           TextColor="#7F8C8D" />
+
+                    <HorizontalStackLayout Spacing="10">
+                        <Button Text="Export as CSV"
+                                BackgroundColor="#3498DB"
+                                TextColor="White"
+                                FontSize="14"
+                                FontAttributes="Bold"
+                                CornerRadius="8"
+                                Clicked="OnExportVolunteersCsvClicked"
+                                HorizontalOptions="FillAndExpand" />
+
+                        <Button Text="Export as JSON"
+                                BackgroundColor="#3498DB"
+                                TextColor="White"
+                                FontSize="14"
+                                FontAttributes="Bold"
+                                CornerRadius="8"
+                                Clicked="OnExportVolunteersJsonClicked"
+                                HorizontalOptions="FillAndExpand" />
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Export Projects Section -->
+            <Frame BackgroundColor="White"
+                   CornerRadius="8"
+                   HasShadow="False"
+                   BorderColor="#BDC3C7"
+                   Padding="20">
+                <VerticalStackLayout Spacing="15">
+                    <HorizontalStackLayout Spacing="10">
+                        <BoxView WidthRequest="4"
+                                 HeightRequest="24"
+                                 Color="#3498DB"
+                                 CornerRadius="2"
+                                 VerticalOptions="Center" />
+                        <Label Text="Projects Data"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50"
+                               VerticalOptions="Center" />
+                    </HorizontalStackLayout>
+
+                    <Label Text="Export all project information including dates, status, and requirements."
+                           FontSize="14"
+                           TextColor="#7F8C8D" />
+
+                    <HorizontalStackLayout Spacing="10">
+                        <Button Text="Export as CSV"
+                                BackgroundColor="#3498DB"
+                                TextColor="White"
+                                FontSize="14"
+                                FontAttributes="Bold"
+                                CornerRadius="8"
+                                Clicked="OnExportProjectsCsvClicked"
+                                HorizontalOptions="FillAndExpand" />
+
+                        <Button Text="Export as JSON"
+                                BackgroundColor="#3498DB"
+                                TextColor="White"
+                                FontSize="14"
+                                FontAttributes="Bold"
+                                CornerRadius="8"
+                                Clicked="OnExportProjectsJsonClicked"
+                                HorizontalOptions="FillAndExpand" />
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Export Assignments Section -->
+            <Frame BackgroundColor="White"
+                   CornerRadius="8"
+                   HasShadow="False"
+                   BorderColor="#BDC3C7"
+                   Padding="20">
+                <VerticalStackLayout Spacing="15">
+                    <HorizontalStackLayout Spacing="10">
+                        <BoxView WidthRequest="4"
+                                 HeightRequest="24"
+                                 Color="#3498DB"
+                                 CornerRadius="2"
+                                 VerticalOptions="Center" />
+                        <Label Text="Assignments Data"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50"
+                               VerticalOptions="Center" />
+                    </HorizontalStackLayout>
+
+                    <Label Text="Export volunteer-project assignments with hours and notes."
+                           FontSize="14"
+                           TextColor="#7F8C8D" />
+
+                    <HorizontalStackLayout Spacing="10">
+                        <Button Text="Export as CSV"
+                                BackgroundColor="#3498DB"
+                                TextColor="White"
+                                FontSize="14"
+                                FontAttributes="Bold"
+                                CornerRadius="8"
+                                Clicked="OnExportAssignmentsCsvClicked"
+                                HorizontalOptions="FillAndExpand" />
+
+                        <Button Text="Export as JSON"
+                                BackgroundColor="#3498DB"
+                                TextColor="White"
+                                FontSize="14"
+                                FontAttributes="Bold"
+                                CornerRadius="8"
+                                Clicked="OnExportAssignmentsJsonClicked"
+                                HorizontalOptions="FillAndExpand" />
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Summary Report -->
+            <Frame BackgroundColor="White"
+                   CornerRadius="8"
+                   HasShadow="False"
+                   BorderColor="#BDC3C7"
+                   Padding="20">
+                <VerticalStackLayout Spacing="15">
+                    <HorizontalStackLayout Spacing="10">
+                        <BoxView WidthRequest="4"
+                                 HeightRequest="24"
+                                 Color="#F39C12"
+                                 CornerRadius="2"
+                                 VerticalOptions="Center" />
+                        <Label Text="Summary Report"
+                               FontSize="18"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50"
+                               VerticalOptions="Center" />
+                    </HorizontalStackLayout>
+
+                    <Label Text="Generate a complete summary report of all data."
+                           FontSize="14"
+                           TextColor="#7F8C8D" />
+
+                    <Button Text="Generate Full Report"
+                            BackgroundColor="#F39C12"
+                            TextColor="White"
+                            FontSize="14"
+                            FontAttributes="Bold"
+                            CornerRadius="8"
+                            Clicked="OnGenerateFullReportClicked" />
+                </VerticalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

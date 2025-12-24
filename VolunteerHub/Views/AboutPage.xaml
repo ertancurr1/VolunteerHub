@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VolunteerHub.Views.AboutPage"
+             Title="Help &amp; About"
+             BackgroundColor="#ECF0F1">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="25">
+
+            <!-- App Info -->
+            <Frame BackgroundColor="#2C3E50"
+                   CornerRadius="8"
+                   HasShadow="False"
+                   Padding="30">
+                <VerticalStackLayout Spacing="10" HorizontalOptions="Center">
+                    <Label Text="VolunteerHub"
+                           FontSize="32"
+                           FontAttributes="Bold"
+                           TextColor="White"
+                           HorizontalOptions="Center" />
+
+                    <Label Text="NGO Community Management System"
+                           FontSize="16"
+                           TextColor="White"
+                           HorizontalOptions="Center" />
+
+                    <Label Text="Version 1.0.0"
+                           FontSize="14"
+                           TextColor="White"
+                           Opacity="0.8"
+                           HorizontalOptions="Center"
+                           Margin="0,10,0,0" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Features -->
+            <Frame BackgroundColor="White"
+                   CornerRadius="8"
+                   HasShadow="False"
+                   BorderColor="#BDC3C7"
+                   Padding="20">
+                <VerticalStackLayout Spacing="15">
+                    <HorizontalStackLayout Spacing="10">
+                        <BoxView WidthRequest="4"
+                                 HeightRequest="24"
+                                 Color="#3498DB"
+                                 CornerRadius="2"
+                                 VerticalOptions="Center" />
+                        <Label Text="Features"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50"
+                               VerticalOptions="Center" />
+                    </HorizontalStackLayout>
+
+                    <Label Text="• Manage volunteers with complete profile information"
+                           FontSize="14"
+                           TextColor="#7F8C8D" />
+
+                    <Label Text="• Track projects with status and requirements"
+                           FontSize="14"
+                           TextColor="#7F8C8D" />
+
+                    <Label Text="• Assign volunteers to projects"
+                           FontSize="14"
+                           TextColor="#7F8C8D" />
+
+                    <Label Text="• Track volunteer hours contributed"
+                           FontSize="14"
+                           TextColor="#7F8C8D" />
+
+                    <Label Text="• Search and filter functionality"
+                           FontSize="14"
+                           TextColor="#7F8C8D" />
+
+                    <Label Text="• Export data to CSV and JSON formats"
+                           FontSize="14"
+                           TextColor="#7F8C8D" />
+
+                    <Label Text="• Real-time statistics dashboard"
+                           FontSize="14"
+                           TextColor="#7F8C8D" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Quick Guide -->
+            <Frame BackgroundColor="White"
+                   CornerRadius="8"
+                   HasShadow="False"
+                   BorderColor="#BDC3C7"
+                   Padding="20">
+                <VerticalStackLayout Spacing="15">
+                    <HorizontalStackLayout Spacing="10">
+                        <BoxView WidthRequest="4"
+                                 HeightRequest="24"
+                                 Color="#3498DB"
+                                 CornerRadius="2"
+                                 VerticalOptions="Center" />
+                        <Label Text="Quick Start Guide"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50"
+                               VerticalOptions="Center" />
+                    </HorizontalStackLayout>
+
+                    <Label Text="1. Manage Volunteers"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           TextColor="#3498DB" />
+                    <Label Text="Add, edit, or remove volunteers. Track their skills, availability, and contact information."
+                           FontSize="14"
+                           TextColor="#7F8C8D" />
+
+                    <Label Text="2. Manage Projects"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           TextColor="#3498DB"
+                           Margin="0,10,0,0" />
+                    <Label Text="Create and manage NGO projects. Set dates, status, and volunteer requirements."
+                           FontSize="14"
+                           TextColor="#7F8C8D" />
+
+                    <Label Text="3. Create Assignments"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           TextColor="#3498DB"
+                           Margin="0,10,0,0" />
+                    <Label Text="Assign volunteers to projects and track their contributed hours."
+                           FontSize="14"
+                           TextColor="#7F8C8D" />
+
+                    <Label Text="4. Export Reports"
+                           FontSize="16"
+                           FontAttributes="Bold"
+                           TextColor="#3498DB"
+                           Margin="0,10,0,0" />
+                    <Label Text="Export your data for backup or analysis in CSV or JSON format."
+                           FontSize="14"
+                           TextColor="#7F8C8D" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Tips -->
+            <Frame BackgroundColor="White"
+                   CornerRadius="8"
+                   HasShadow="False"
+                   BorderColor="#BDC3C7"
+                   Padding="20">
+                <VerticalStackLayout Spacing="15">
+                    <HorizontalStackLayout Spacing="10">
+                        <BoxView WidthRequest="4"
+                                 HeightRequest="24"
+                                 Color="#27AE60"
+                                 CornerRadius="2"
+                                 VerticalOptions="Center" />
+                        <Label Text="Tips"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50"
+                               VerticalOptions="Center" />
+                    </HorizontalStackLayout>
+
+                    <Label Text="• Use the search bar to quickly find volunteers or projects"
+                           FontSize="14"
+                           TextColor="#7F8C8D" />
+
+                    <Label Text="• Mark volunteers as 'Inactive' instead of deleting them"
+                           FontSize="14"
+                           TextColor="#7F8C8D" />
+
+                    <Label Text="• Update project status as work progresses"
+                           FontSize="14"
+                           TextColor="#7F8C8D" />
+
+                    <Label Text="• Use the 'Add Hours' button for quick hour updates"
+                           FontSize="14"
+                           TextColor="#7F8C8D" />
+
+                    <Label Text="• Export data regularly for backup"
+                           FontSize="14"
+                           TextColor="#7F8C8D" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Technical Info -->
+            <Frame BackgroundColor="White"
+                   CornerRadius="8"
+                   HasShadow="False"
+                   BorderColor="#BDC3C7"
+                   Padding="20">
+                <VerticalStackLayout Spacing="10">
+                    <HorizontalStackLayout Spacing="10">
+                        <BoxView WidthRequest="4"
+                                 HeightRequest="24"
+                                 Color="#95A5A6"
+                                 CornerRadius="2"
+                                 VerticalOptions="Center" />
+                        <Label Text="Technical Information"
+                               FontSize="20"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50"
+                               VerticalOptions="Center" />
+                    </HorizontalStackLayout>
+
+                    <Label Text="Built with .NET MAUI"
+                           FontSize="14"
+                           TextColor="#7F8C8D" />
+
+                    <Label Text="Database: SQLite with Entity Framework Core"
+                           FontSize="14"
+                           TextColor="#7F8C8D" />
+
+                    <Label Text="Architecture: MVVM Pattern"
+                           FontSize="14"
+                           TextColor="#7F8C8D" />
+
+                    <Label Text="Created: December 2025"
+                           FontSize="14"
+                           TextColor="#7F8C8D" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <!-- Footer -->
+            <Label Text="© 2025 VolunteerHub - NGO Community Management"
+                   FontSize="12"
+                   TextColor="#95A5A6"
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,20" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

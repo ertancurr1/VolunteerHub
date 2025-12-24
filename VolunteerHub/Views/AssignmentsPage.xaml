@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VolunteerHub.Views.AssignmentsPage"
+             Title="Assignments"
+             BackgroundColor="#ECF0F1">
+
+    <Grid RowDefinitions="Auto,Auto,*" Padding="20" RowSpacing="15">
+
+        <!-- Header -->
+        <VerticalStackLayout Grid.Row="0" Spacing="5">
+            <Label Text="Volunteer Assignments"
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   TextColor="#2C3E50" />
+            <Label Text="Manage volunteer-project assignments and track hours"
+                   FontSize="14"
+                   TextColor="#7F8C8D" />
+        </VerticalStackLayout>
+
+        <!-- Search and Add Section -->
+        <Grid Grid.Row="1" ColumnDefinitions="*,Auto" ColumnSpacing="10">
+
+            <!-- Search Bar -->
+            <Frame Grid.Column="0"
+                   BackgroundColor="White"
+                   CornerRadius="8"
+                   HasShadow="False"
+                   BorderColor="#BDC3C7"
+                   Padding="0">
+                <SearchBar x:Name="SearchBar"
+                           Placeholder="Search by volunteer or project..."
+                           TextColor="#2C3E50"
+                           PlaceholderColor="#95A5A6"
+                           BackgroundColor="Transparent"
+                           SearchButtonPressed="OnSearchPressed"
+                           TextChanged="OnSearchTextChanged" />
+            </Frame>
+
+            <!-- Add Button -->
+            <Button Grid.Column="1"
+                    Text="+ New Assignment"
+                    BackgroundColor="#3498DB"
+                    TextColor="White"
+                    FontSize="14"
+                    FontAttributes="Bold"
+                    CornerRadius="8"
+                    Clicked="OnAddAssignmentClicked"
+                    WidthRequest="160" />
+        </Grid>
+
+        <!-- Assignments List -->
+        <CollectionView Grid.Row="2"
+                        x:Name="AssignmentsCollectionView"
+                        SelectionMode="None">
+
+            <CollectionView.EmptyView>
+                <ContentView>
+                    <VerticalStackLayout HorizontalOptions="Center" 
+                                        VerticalOptions="Center"
+                                        Spacing="10">
+                        <Label Text="No assignments found"
+                               FontSize="18"
+                               TextColor="#95A5A6"
+                               HorizontalOptions="Center" />
+                        <Label Text="Click 'New Assignment' to assign volunteers to projects"
+                               FontSize="14"
+                               TextColor="#BDC3C7"
+                               HorizontalOptions="Center" />
+                    </VerticalStackLayout>
+                </ContentView>
+            </CollectionView.EmptyView>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Margin="0,0,0,10" 
+                           Padding="20"
+                           BackgroundColor="White"
+                           CornerRadius="8"
+                           HasShadow="False"
+                           BorderColor="#BDC3C7">
+
+                        <Grid ColumnDefinitions="Auto,*,Auto" RowDefinitions="Auto,Auto,Auto,Auto,Auto" ColumnSpacing="15">
+
+                            <!-- Status Indicator -->
+                            <BoxView Grid.Row="0" Grid.Column="0" Grid.RowSpan="4"
+                                     WidthRequest="4"
+                                     CornerRadius="2"
+                                     Color="#3498DB"
+                                     VerticalOptions="FillAndExpand" />
+
+                            <!-- Volunteer and Project Names -->
+                            <VerticalStackLayout Grid.Row="0" Grid.Column="1" Spacing="5">
+                                <Label FontSize="16"
+                                       FontAttributes="Bold"
+                                       TextColor="#2C3E50">
+                                    <Label.Text>
+                                        <MultiBinding StringFormat="{}Volunteer: {0} {1}">
+                                            <Binding Path="Volunteer.FirstName" />
+                                            <Binding Path="Volunteer.LastName" />
+                                        </MultiBinding>
+                                    </Label.Text>
+                                </Label>
+
+                                <Label Text="{Binding Project.ProjectName, StringFormat='Project: {0}'}"
+                                       FontSize="16"
+                                       TextColor="#3498DB"
+                                       FontAttributes="Bold" />
+                            </VerticalStackLayout>
+
+                            <!-- Hours Badge -->
+                            <Frame Grid.Row="0" Grid.Column="2"
+                                   Padding="10,5"
+                                   CornerRadius="4"
+                                   HasShadow="False"
+                                   BackgroundColor="#F39C12"
+                                   VerticalOptions="Center">
+                                <Label FontSize="13"
+                                       TextColor="White"
+                                       FontAttributes="Bold">
+                                    <Label.Text>
+                                        <MultiBinding StringFormat="{}{0} hrs">
+                                            <Binding Path="HoursContributed" />
+                                        </MultiBinding>
+                                    </Label.Text>
+                                </Label>
+                            </Frame>
+
+                            <!-- Assignment Date -->
+                            <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
+                                   FontSize="14"
+                                   TextColor="#7F8C8D"
+                                   Margin="0,5,0,0">
+                                <Label.Text>
+                                    <MultiBinding StringFormat="{}Assigned: {0:yyyy-MM-dd}">
+                                        <Binding Path="AssignmentDate" />
+                                    </MultiBinding>
+                                </Label.Text>
+                            </Label>
+
+                            <!-- Project Dates -->
+                            <Label Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"
+                                   FontSize="13"
+                                   TextColor="#95A5A6"
+                                   Margin="0,2,0,0">
+                                <Label.Text>
+                                    <MultiBinding StringFormat="{}Project: {0:yyyy-MM-dd} to {1:yyyy-MM-dd}">
+                                        <Binding Path="Project.StartDate" />
+                                        <Binding Path="Project.EndDate" />
+                                    </MultiBinding>
+                                </Label.Text>
+                            </Label>
+
+                            <!-- Notes -->
+                            <Label Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2"
+                                   Text="{Binding Notes, StringFormat='Notes: {0}'}"
+                                   FontSize="13"
+                                   TextColor="#7F8C8D"
+                                   LineBreakMode="TailTruncation"
+                                   MaxLines="2"
+                                   Margin="0,5,0,0"
+                                   IsVisible="{Binding Notes, Converter={StaticResource StringNotNullOrEmptyConverter}}" />
+
+                            <!-- Action Buttons -->
+                            <HorizontalStackLayout Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"
+                                                  Spacing="10"
+                                                  Margin="0,15,0,0">
+
+                                <Button Text="Edit"
+                                        BackgroundColor="#3498DB"
+                                        TextColor="White"
+                                        FontSize="12"
+                                        FontAttributes="Bold"
+                                        CornerRadius="4"
+                                        Padding="15,8"
+                                        Clicked="OnEditAssignmentClicked"
+                                        CommandParameter="{Binding .}" />
+
+                                <Button Text="Delete"
+                                        BackgroundColor="#E74C3C"
+                                        TextColor="White"
+                                        FontSize="12"
+                                        FontAttributes="Bold"
+                                        CornerRadius="4"
+                                        Padding="15,8"
+                                        Clicked="OnDeleteAssignmentClicked"
+                                        CommandParameter="{Binding .}" />
+
+                                <Button Text="Add Hours"
+                                        BackgroundColor="#F39C12"
+                                        TextColor="White"
+                                        FontSize="12"
+                                        FontAttributes="Bold"
+                                        CornerRadius="4"
+                                        Padding="15,8"
+                                        Clicked="OnAddHoursClicked"
+                                        CommandParameter="{Binding .}" />
+                            </HorizontalStackLayout>
+
+                        </Grid>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </Grid>
+
+</ContentPage>

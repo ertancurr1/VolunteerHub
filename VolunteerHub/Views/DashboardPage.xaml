@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VolunteerHub.Views.DashboardPage"
+             Title="Dashboard"
+             BackgroundColor="#ECF0F1">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="25">
+
+            <!-- Header Section -->
+            <VerticalStackLayout Spacing="5">
+                <Label Text="Dashboard Overview"
+                       FontSize="28"
+                       FontAttributes="Bold"
+                       TextColor="#2C3E50" />
+                <Label Text="Real-time statistics and quick navigation"
+                       FontSize="14"
+                       TextColor="#7F8C8D" />
+            </VerticalStackLayout>
+
+            <!-- Statistics Grid -->
+            <Grid ColumnDefinitions="*,*,*,*" 
+                  RowDefinitions="Auto,Auto"
+                  ColumnSpacing="15"
+                  RowSpacing="15">
+
+                <!-- Total Volunteers -->
+                <Frame Grid.Row="0" Grid.Column="0"
+                       BackgroundColor="White"
+                       CornerRadius="8"
+                       HasShadow="False"
+                       BorderColor="#BDC3C7"
+                       Padding="20">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="●"
+                               FontSize="24"
+                               TextColor="#3498DB"
+                               HorizontalOptions="Start" />
+                        <Label Text="TOTAL VOLUNTEERS"
+                               FontSize="11"
+                               TextColor="#7F8C8D"
+                               FontAttributes="Bold" />
+                        <Label x:Name="TotalVolunteersLabel"
+                               Text="0"
+                               FontSize="36"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Active Volunteers -->
+                <Frame Grid.Row="0" Grid.Column="1"
+                       BackgroundColor="White"
+                       CornerRadius="8"
+                       HasShadow="False"
+                       BorderColor="#BDC3C7"
+                       Padding="20">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="●"
+                               FontSize="24"
+                               TextColor="#27AE60"
+                               HorizontalOptions="Start" />
+                        <Label Text="ACTIVE VOLUNTEERS"
+                               FontSize="11"
+                               TextColor="#7F8C8D"
+                               FontAttributes="Bold" />
+                        <Label x:Name="ActiveVolunteersLabel"
+                               Text="0"
+                               FontSize="36"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Total Projects -->
+                <Frame Grid.Row="0" Grid.Column="2"
+                       BackgroundColor="White"
+                       CornerRadius="8"
+                       HasShadow="False"
+                       BorderColor="#BDC3C7"
+                       Padding="20">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="●"
+                               FontSize="24"
+                               TextColor="#3498DB"
+                               HorizontalOptions="Start" />
+                        <Label Text="TOTAL PROJECTS"
+                               FontSize="11"
+                               TextColor="#7F8C8D"
+                               FontAttributes="Bold" />
+                        <Label x:Name="TotalProjectsLabel"
+                               Text="0"
+                               FontSize="36"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Active Projects -->
+                <Frame Grid.Row="0" Grid.Column="3"
+                       BackgroundColor="White"
+                       CornerRadius="8"
+                       HasShadow="False"
+                       BorderColor="#BDC3C7"
+                       Padding="20">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="●"
+                               FontSize="24"
+                               TextColor="#27AE60"
+                               HorizontalOptions="Start" />
+                        <Label Text="ACTIVE PROJECTS"
+                               FontSize="11"
+                               TextColor="#7F8C8D"
+                               FontAttributes="Bold" />
+                        <Label x:Name="ActiveProjectsLabel"
+                               Text="0"
+                               FontSize="36"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Total Assignments -->
+                <Frame Grid.Row="1" Grid.Column="0"
+                       BackgroundColor="White"
+                       CornerRadius="8"
+                       HasShadow="False"
+                       BorderColor="#BDC3C7"
+                       Padding="20">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="●"
+                               FontSize="24"
+                               TextColor="#9B59B6"
+                               HorizontalOptions="Start" />
+                        <Label Text="ASSIGNMENTS"
+                               FontSize="11"
+                               TextColor="#7F8C8D"
+                               FontAttributes="Bold" />
+                        <Label x:Name="TotalAssignmentsLabel"
+                               Text="0"
+                               FontSize="36"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Total Hours -->
+                <Frame Grid.Row="1" Grid.Column="1"
+                       BackgroundColor="White"
+                       CornerRadius="8"
+                       HasShadow="False"
+                       BorderColor="#BDC3C7"
+                       Padding="20">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="●"
+                               FontSize="24"
+                               TextColor="#F39C12"
+                               HorizontalOptions="Start" />
+                        <Label Text="TOTAL HOURS"
+                               FontSize="11"
+                               TextColor="#7F8C8D"
+                               FontAttributes="Bold" />
+                        <Label x:Name="TotalHoursLabel"
+                               Text="0"
+                               FontSize="36"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Completed Projects -->
+                <Frame Grid.Row="1" Grid.Column="2"
+                       BackgroundColor="White"
+                       CornerRadius="8"
+                       HasShadow="False"
+                       BorderColor="#BDC3C7"
+                       Padding="20">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="●"
+                               FontSize="24"
+                               TextColor="#27AE60"
+                               HorizontalOptions="Start" />
+                        <Label Text="COMPLETED"
+                               FontSize="11"
+                               TextColor="#7F8C8D"
+                               FontAttributes="Bold" />
+                        <Label x:Name="CompletedProjectsLabel"
+                               Text="0"
+                               FontSize="36"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Planning Projects -->
+                <Frame Grid.Row="1" Grid.Column="3"
+                       BackgroundColor="White"
+                       CornerRadius="8"
+                       HasShadow="False"
+                       BorderColor="#BDC3C7"
+                       Padding="20">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="●"
+                               FontSize="24"
+                               TextColor="#95A5A6"
+                               HorizontalOptions="Start" />
+                        <Label Text="PLANNING"
+                               FontSize="11"
+                               TextColor="#7F8C8D"
+                               FontAttributes="Bold" />
+                        <Label x:Name="PlanningProjectsLabel"
+                               Text="0"
+                               FontSize="36"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                    </VerticalStackLayout>
+                </Frame>
+
+            </Grid>
+
+            <!-- Navigation Section -->
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Navigation"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="#2C3E50"
+                       Margin="0,10,0,5" />
+
+                <Grid ColumnDefinitions="*,*,*" 
+                      ColumnSpacing="15"
+                      RowSpacing="15">
+
+                    <!-- Volunteers Button -->
+                    <Frame Grid.Column="0"
+                           BackgroundColor="White"
+                           CornerRadius="8"
+                           HasShadow="False"
+                           BorderColor="#3498DB"
+                           Padding="0">
+                        <Button Text="Volunteers"
+                                BackgroundColor="Transparent"
+                                TextColor="#3498DB"
+                                FontSize="16"
+                                FontAttributes="Bold"
+                                Padding="20"
+                                Clicked="OnManageVolunteersClicked" />
+                    </Frame>
+
+                    <!-- Projects Button -->
+                    <Frame Grid.Column="1"
+                           BackgroundColor="White"
+                           CornerRadius="8"
+                           HasShadow="False"
+                           BorderColor="#3498DB"
+                           Padding="0">
+                        <Button Text="Projects"
+                                BackgroundColor="Transparent"
+                                TextColor="#3498DB"
+                                FontSize="16"
+                                FontAttributes="Bold"
+                                Padding="20"
+                                Clicked="OnManageProjectsClicked" />
+                    </Frame>
+
+                    <!-- Assignments Button -->
+                    <Frame Grid.Column="2"
+                           BackgroundColor="White"
+                           CornerRadius="8"
+                           HasShadow="False"
+                           BorderColor="#3498DB"
+                           Padding="0">
+                        <Button Text="Assignments"
+                                BackgroundColor="Transparent"
+                                TextColor="#3498DB"
+                                FontSize="16"
+                                FontAttributes="Bold"
+                                Padding="20"
+                                Clicked="OnManageAssignmentsClicked" />
+                    </Frame>
+
+                </Grid>
+
+                <Grid ColumnDefinitions="*,*" 
+                      ColumnSpacing="15"
+                      Margin="0,0,0,0">
+
+                    <!-- Export Button -->
+                    <Frame Grid.Column="0"
+                           BackgroundColor="White"
+                           CornerRadius="8"
+                           HasShadow="False"
+                           BorderColor="#95A5A6"
+                           Padding="0">
+                        <Button Text="Export Reports"
+                                BackgroundColor="Transparent"
+                                TextColor="#7F8C8D"
+                                FontSize="16"
+                                FontAttributes="Bold"
+                                Padding="20"
+                                Clicked="OnExportReportsClicked" />
+                    </Frame>
+
+                    <!-- Help Button -->
+                    <Frame Grid.Column="1"
+                           BackgroundColor="White"
+                           CornerRadius="8"
+                           HasShadow="False"
+                           BorderColor="#95A5A6"
+                           Padding="0">
+                        <Button Text="Help &amp; About"
+                                BackgroundColor="Transparent"
+                                TextColor="#7F8C8D"
+                                FontSize="16"
+                                FontAttributes="Bold"
+                                Padding="20"
+                                Clicked="OnHelpAboutClicked" />
+                    </Frame>
+
+                </Grid>
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

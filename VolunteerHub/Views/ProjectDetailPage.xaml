@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VolunteerHub.Views.ProjectDetailPage"
+             Title="Project Details"
+             BackgroundColor="#ECF0F1">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <!-- Header -->
+            <VerticalStackLayout Spacing="5">
+                <Label x:Name="HeaderLabel"
+                       Text="Add New Project"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       TextColor="#2C3E50" />
+                <Label Text="Complete the form below"
+                       FontSize="14"
+                       TextColor="#7F8C8D" />
+            </VerticalStackLayout>
+
+            <!-- Form Card -->
+            <Frame BackgroundColor="White"
+                   CornerRadius="8"
+                   HasShadow="False"
+                   BorderColor="#BDC3C7"
+                   Padding="20">
+
+                <VerticalStackLayout Spacing="15">
+
+                    <!-- Project Name -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Project Name *"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                        <Entry TextColor="#2C3E50" 
+                               x:Name="ProjectNameEntry"
+                               Placeholder="Enter project name"
+                               FontSize="14" />
+                    </VerticalStackLayout>
+
+                    <!-- Description -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Description"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                        <Editor TextColor="#2C3E50" 
+                                x:Name="DescriptionEditor"
+                                Placeholder="Enter project description"
+                                FontSize="14"
+                                HeightRequest="100" />
+                    </VerticalStackLayout>
+
+                    <!-- Start Date -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Start Date *"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                        <DatePicker x:Name="StartDatePicker"
+                                    Format="yyyy-MM-dd"
+                                    FontSize="14"
+                                    TextColor="#2C3E50" />
+                    </VerticalStackLayout>
+
+                    <!-- End Date -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="End Date (Optional)"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                        <HorizontalStackLayout Spacing="10">
+                            <DatePicker x:Name="EndDatePicker"
+                                        Format="yyyy-MM-dd"
+                                        FontSize="14"
+                                        TextColor="#2C3E50"
+                                        HorizontalOptions="FillAndExpand" />
+                            <CheckBox x:Name="NoEndDateCheckBox"
+                                      IsChecked="False"
+                                      CheckedChanged="OnNoEndDateChanged" />
+                            <Label Text="No End Date"
+                                   VerticalOptions="Center"
+                                   FontSize="13"
+                                   TextColor="#7F8C8D" />
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+
+                    <!-- Status -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Status *"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                        <Picker x:Name="StatusPicker"
+                                FontSize="14"
+                                TextColor="#2C3E50"
+                                TitleColor="#95A5A6">
+                            <Picker.Items>
+                                <x:String>Planning</x:String>
+                                <x:String>Active</x:String>
+                                <x:String>Completed</x:String>
+                                <x:String>Cancelled</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </VerticalStackLayout>
+
+                    <!-- Required Volunteers -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Required Volunteers *"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                        <Entry TextColor="#2C3E50" 
+                               x:Name="RequiredVolunteersEntry"
+                               Placeholder="Enter number of volunteers needed"
+                               Keyboard="Numeric"
+                               FontSize="14" />
+                    </VerticalStackLayout>
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+            <!-- Buttons -->
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+
+                <Button Text="Save"
+                        BackgroundColor="#27AE60"
+                        TextColor="White"
+                        FontSize="16"
+                        FontAttributes="Bold"
+                        CornerRadius="8"
+                        WidthRequest="150"
+                        Padding="15"
+                        Clicked="OnSaveClicked" />
+
+                <Button Text="Cancel"
+                        BackgroundColor="#95A5A6"
+                        TextColor="White"
+                        FontSize="16"
+                        FontAttributes="Bold"
+                        CornerRadius="8"
+                        WidthRequest="150"
+                        Padding="15"
+                        Clicked="OnCancelClicked" />
+
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

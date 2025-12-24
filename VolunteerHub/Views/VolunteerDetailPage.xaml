@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VolunteerHub.Views.VolunteerDetailPage"
+             Title="Volunteer Details"
+             BackgroundColor="#ECF0F1">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <!-- Header -->
+            <VerticalStackLayout Spacing="5">
+                <Label x:Name="HeaderLabel"
+                       Text="Add New Volunteer"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       TextColor="#2C3E50" />
+                <Label Text="Complete the form below"
+                       FontSize="14"
+                       TextColor="#7F8C8D" />
+            </VerticalStackLayout>
+
+            <!-- Form Card -->
+            <Frame BackgroundColor="White"
+                   CornerRadius="8"
+                   HasShadow="False"
+                   BorderColor="#BDC3C7"
+                   Padding="20">
+
+                <VerticalStackLayout Spacing="15">
+
+                    <!-- First Name -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="First Name *"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                        <Entry TextColor="#2C3E50" 
+                               x:Name="FirstNameEntry"
+                               Placeholder="Enter first name"
+                               FontSize="14" />
+                    </VerticalStackLayout>
+
+                    <!-- Last Name -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Last Name *"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                        <Entry TextColor="#2C3E50" 
+                               x:Name="LastNameEntry"
+                               Placeholder="Enter last name"
+                               FontSize="14" />
+                    </VerticalStackLayout>
+
+                    <!-- Email -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Email *"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                        <Entry TextColor="#2C3E50" 
+                               x:Name="EmailEntry"
+                               Placeholder="Enter email address"
+                               Keyboard="Email"
+                               FontSize="14" />
+                    </VerticalStackLayout>
+
+                    <!-- Phone -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Phone"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                        <Entry TextColor="#2C3E50" 
+                               x:Name="PhoneEntry"
+                               Placeholder="Enter phone number"
+                               Keyboard="Telephone"
+                               FontSize="14" />
+                    </VerticalStackLayout>
+
+                    <!-- Skills -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Skills"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                        <Entry TextColor="#2C3E50" 
+                               x:Name="SkillsEntry"
+                               Placeholder="e.g., Teaching, Marketing, IT"
+                               FontSize="14" />
+                    </VerticalStackLayout>
+
+                    <!-- Availability -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Availability"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                        <Entry TextColor="#2C3E50" 
+                               x:Name="AvailabilityEntry"
+                               Placeholder="e.g., Weekdays, Evenings, Weekends"
+                               FontSize="14" />
+                    </VerticalStackLayout>
+
+                    <!-- Join Date -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Join Date *"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                        <DatePicker x:Name="JoinDatePicker"
+                                    Format="yyyy-MM-dd"
+                                    FontSize="14"
+                                    TextColor="#2C3E50" />
+                    </VerticalStackLayout>
+
+                    <!-- Status -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Status *"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                        <Picker x:Name="StatusPicker"
+                                FontSize="14"
+                                TextColor="#2C3E50"
+                                TitleColor="#95A5A6">
+                            <Picker.Items>
+                                <x:String>Active</x:String>
+                                <x:String>Inactive</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </VerticalStackLayout>
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+            <!-- Buttons -->
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+
+                <Button Text="Save"
+                        BackgroundColor="#27AE60"
+                        TextColor="White"
+                        FontSize="16"
+                        FontAttributes="Bold"
+                        CornerRadius="8"
+                        WidthRequest="150"
+                        Padding="15"
+                        Clicked="OnSaveClicked" />
+
+                <Button Text="Cancel"
+                        BackgroundColor="#95A5A6"
+                        TextColor="White"
+                        FontSize="16"
+                        FontAttributes="Bold"
+                        CornerRadius="8"
+                        WidthRequest="150"
+                        Padding="15"
+                        Clicked="OnCancelClicked" />
+
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

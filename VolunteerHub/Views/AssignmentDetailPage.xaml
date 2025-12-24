@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VolunteerHub.Views.AssignmentDetailPage"
+             Title="Assignment Details"
+             BackgroundColor="#ECF0F1">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20">
+
+            <!-- Header -->
+            <VerticalStackLayout Spacing="5">
+                <Label x:Name="HeaderLabel"
+                       Text="New Assignment"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       TextColor="#2C3E50" />
+                <Label Text="Assign a volunteer to a project"
+                       FontSize="14"
+                       TextColor="#7F8C8D" />
+            </VerticalStackLayout>
+
+            <!-- Form Card -->
+            <Frame BackgroundColor="White"
+                   CornerRadius="8"
+                   HasShadow="False"
+                   BorderColor="#BDC3C7"
+                   Padding="20">
+
+                <VerticalStackLayout Spacing="15">
+
+                    <!-- Select Volunteer -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Select Volunteer *"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                        <Frame BorderColor="#3498DB"
+                               CornerRadius="5"
+                               Padding="0"
+                               HasShadow="False"
+                               BackgroundColor="White">
+                            <Picker x:Name="VolunteerPicker"
+                                    Title="Click here to choose a volunteer"
+                                    FontSize="14"
+                                    TextColor="#2C3E50"
+                                    TitleColor="#7F8C8D"
+                                    BackgroundColor="Transparent"
+                                    Margin="5" />
+                        </Frame>
+                    </VerticalStackLayout>
+
+                    <!-- Select Project -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Select Project *"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                        <Frame BorderColor="#3498DB"
+                               CornerRadius="5"
+                               Padding="0"
+                               HasShadow="False"
+                               BackgroundColor="White">
+                            <Picker x:Name="ProjectPicker"
+                                    Title="Click here to choose a project"
+                                    FontSize="14"
+                                    TextColor="#2C3E50"
+                                    TitleColor="#7F8C8D"
+                                    BackgroundColor="Transparent"
+                                    Margin="5" />
+                        </Frame>
+                    </VerticalStackLayout>
+
+                    <!-- Assignment Date -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Assignment Date *"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                        <DatePicker x:Name="AssignmentDatePicker"
+                                    Format="yyyy-MM-dd"
+                                    FontSize="14"
+                                    TextColor="#2C3E50" />
+                    </VerticalStackLayout>
+
+                    <!-- Hours Contributed -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Hours Contributed"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                        <Entry TextColor="#2C3E50" 
+                               x:Name="HoursEntry"
+                               Placeholder="Enter hours (default: 0)"
+                               Keyboard="Numeric"
+                               FontSize="14"
+                               Text="0" />
+                    </VerticalStackLayout>
+
+                    <!-- Notes -->
+                    <VerticalStackLayout Spacing="5">
+                        <Label Text="Notes"
+                               FontSize="13"
+                               FontAttributes="Bold"
+                               TextColor="#2C3E50" />
+                        <Editor TextColor="#2C3E50" 
+                                x:Name="NotesEditor"
+                                Placeholder="Optional notes about this assignment"
+                                FontSize="14"
+                                HeightRequest="100" />
+                    </VerticalStackLayout>
+
+                </VerticalStackLayout>
+
+            </Frame>
+
+            <!-- Buttons -->
+            <HorizontalStackLayout Spacing="10" HorizontalOptions="Center">
+
+                <Button Text="Save"
+                        BackgroundColor="#27AE60"
+                        TextColor="White"
+                        FontSize="16"
+                        FontAttributes="Bold"
+                        CornerRadius="8"
+                        WidthRequest="150"
+                        Padding="15"
+                        Clicked="OnSaveClicked" />
+
+                <Button Text="Cancel"
+                        BackgroundColor="#95A5A6"
+                        TextColor="White"
+                        FontSize="16"
+                        FontAttributes="Bold"
+                        CornerRadius="8"
+                        WidthRequest="150"
+                        Padding="15"
+                        Clicked="OnCancelClicked" />
+
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

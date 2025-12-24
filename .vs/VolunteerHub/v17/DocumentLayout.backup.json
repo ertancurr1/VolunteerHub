@@ -1,0 +1,538 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\views\\aboutpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\views\\aboutpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\views\\exportpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\views\\exportpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\views\\assignmentdetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\views\\assignmentdetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\views\\assignmentspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\views\\assignmentspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\views\\projectdetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\views\\projectdetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\views\\projectspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\views\\projectspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\views\\volunteerdetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\views\\volunteerdetailpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\converters\\statuscolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\converters\\statuscolorconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\views\\volunteerspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\views\\volunteerspage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\views\\dashboardpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\views\\dashboardpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\views\\dashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\views\\dashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\mauiprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\views\\aboutpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\views\\aboutpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\views\\exportpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\views\\exportpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\services\\exportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\services\\exportservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\views\\assignmentdetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\views\\assignmentdetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\models\\volunteerdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\models\\volunteerdisplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\views\\assignmentspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\views\\assignmentspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\converters\\stringnotnulloremptyconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\converters\\stringnotnulloremptyconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\views\\projectdetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\views\\projectdetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\views\\projectspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\views\\projectspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\views\\volunteerdetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\views\\volunteerdetailpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\views\\volunteerspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\views\\volunteerspage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\models\\volunteerassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\models\\volunteerassignment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|c:\\users\\ertan\\source\\repos\\volunteerhub\\volunteerhub\\models\\volunteer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7F51650B-90E4-486A-B8D6-F34DCF8F3E83}|VolunteerHub\\VolunteerHub.csproj|solutionrelative:volunteerhub\\models\\volunteer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 28,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AboutPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\AboutPage.xaml.cs",
+              "RelativeDocumentMoniker": "VolunteerHub\\Views\\AboutPage.xaml.cs",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\AboutPage.xaml.cs",
+              "RelativeToolTip": "VolunteerHub\\Views\\AboutPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T21:24:56.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AboutPage.xaml",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\AboutPage.xaml",
+              "RelativeDocumentMoniker": "VolunteerHub\\Views\\AboutPage.xaml",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\AboutPage.xaml",
+              "RelativeToolTip": "VolunteerHub\\Views\\AboutPage.xaml",
+              "ViewState": "AgIAANoAAAAAAAAAAAAAwOkAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-23T21:24:36.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ExportPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\ExportPage.xaml.cs",
+              "RelativeDocumentMoniker": "VolunteerHub\\Views\\ExportPage.xaml.cs",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\ExportPage.xaml.cs",
+              "RelativeToolTip": "VolunteerHub\\Views\\ExportPage.xaml.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAUwJsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T21:19:44.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ExportService.cs",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Services\\ExportService.cs",
+              "RelativeDocumentMoniker": "VolunteerHub\\Services\\ExportService.cs",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Services\\ExportService.cs",
+              "RelativeToolTip": "VolunteerHub\\Services\\ExportService.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAADwvzsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T21:19:30.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ExportPage.xaml",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\ExportPage.xaml",
+              "RelativeDocumentMoniker": "VolunteerHub\\Views\\ExportPage.xaml",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\ExportPage.xaml",
+              "RelativeToolTip": "VolunteerHub\\Views\\ExportPage.xaml",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAqwMQAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-23T21:18:47.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "VolunteerDisplay.cs",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Models\\VolunteerDisplay.cs",
+              "RelativeDocumentMoniker": "VolunteerHub\\Models\\VolunteerDisplay.cs",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Models\\VolunteerDisplay.cs",
+              "RelativeToolTip": "VolunteerHub\\Models\\VolunteerDisplay.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T21:08:08.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AssignmentDetailPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\AssignmentDetailPage.xaml.cs",
+              "RelativeDocumentMoniker": "VolunteerHub\\Views\\AssignmentDetailPage.xaml.cs",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\AssignmentDetailPage.xaml.cs",
+              "RelativeToolTip": "VolunteerHub\\Views\\AssignmentDetailPage.xaml.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAswLsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T20:56:05.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AssignmentDetailPage.xaml",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\AssignmentDetailPage.xaml",
+              "RelativeDocumentMoniker": "VolunteerHub\\Views\\AssignmentDetailPage.xaml",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\AssignmentDetailPage.xaml",
+              "RelativeToolTip": "VolunteerHub\\Views\\AssignmentDetailPage.xaml",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAmwJAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-23T20:55:43.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AssignmentsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\AssignmentsPage.xaml.cs",
+              "RelativeDocumentMoniker": "VolunteerHub\\Views\\AssignmentsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\AssignmentsPage.xaml.cs",
+              "RelativeToolTip": "VolunteerHub\\Views\\AssignmentsPage.xaml.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAADwv6oAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T20:54:56.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "StringNotNullOrEmptyConverter.cs",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Converters\\StringNotNullOrEmptyConverter.cs",
+              "RelativeDocumentMoniker": "VolunteerHub\\Converters\\StringNotNullOrEmptyConverter.cs",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Converters\\StringNotNullOrEmptyConverter.cs",
+              "RelativeToolTip": "VolunteerHub\\Converters\\StringNotNullOrEmptyConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T20:54:15.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AssignmentsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\AssignmentsPage.xaml",
+              "RelativeDocumentMoniker": "VolunteerHub\\Views\\AssignmentsPage.xaml",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\AssignmentsPage.xaml",
+              "RelativeToolTip": "VolunteerHub\\Views\\AssignmentsPage.xaml",
+              "ViewState": "AgIAALIAAAAAAAAAAAAqwM8AAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-23T20:53:26.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ProjectDetailPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\ProjectDetailPage.xaml.cs",
+              "RelativeDocumentMoniker": "VolunteerHub\\Views\\ProjectDetailPage.xaml.cs",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\ProjectDetailPage.xaml.cs",
+              "RelativeToolTip": "VolunteerHub\\Views\\ProjectDetailPage.xaml.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAswJEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T20:47:59.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProjectDetailPage.xaml",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\ProjectDetailPage.xaml",
+              "RelativeDocumentMoniker": "VolunteerHub\\Views\\ProjectDetailPage.xaml",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\ProjectDetailPage.xaml",
+              "RelativeToolTip": "VolunteerHub\\Views\\ProjectDetailPage.xaml",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAqwJoAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-23T20:47:38.6Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ProjectsPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\ProjectsPage.xaml.cs",
+              "RelativeDocumentMoniker": "VolunteerHub\\Views\\ProjectsPage.xaml.cs",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\ProjectsPage.xaml.cs",
+              "RelativeToolTip": "VolunteerHub\\Views\\ProjectsPage.xaml.cs",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAswKoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T20:46:53.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProjectsPage.xaml",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\ProjectsPage.xaml",
+              "RelativeDocumentMoniker": "VolunteerHub\\Views\\ProjectsPage.xaml",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\ProjectsPage.xaml",
+              "RelativeToolTip": "VolunteerHub\\Views\\ProjectsPage.xaml",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAqwLwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-23T20:46:24.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "VolunteerDetailPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\VolunteerDetailPage.xaml.cs",
+              "RelativeDocumentMoniker": "VolunteerHub\\Views\\VolunteerDetailPage.xaml.cs",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\VolunteerDetailPage.xaml.cs",
+              "RelativeToolTip": "VolunteerHub\\Views\\VolunteerDetailPage.xaml.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAswIMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T20:24:37.41Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VolunteerDetailPage.xaml",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\VolunteerDetailPage.xaml",
+              "RelativeDocumentMoniker": "VolunteerHub\\Views\\VolunteerDetailPage.xaml",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\VolunteerDetailPage.xaml",
+              "RelativeToolTip": "VolunteerHub\\Views\\VolunteerDetailPage.xaml",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAmwKYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-23T20:24:04.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "VolunteersPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\VolunteersPage.xaml.cs",
+              "RelativeDocumentMoniker": "VolunteerHub\\Views\\VolunteersPage.xaml.cs",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\VolunteersPage.xaml.cs",
+              "RelativeToolTip": "VolunteerHub\\Views\\VolunteersPage.xaml.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAowKgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T20:22:32.855Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\App.xaml",
+              "RelativeDocumentMoniker": "VolunteerHub\\App.xaml",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\App.xaml",
+              "RelativeToolTip": "VolunteerHub\\App.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-23T20:21:26.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StatusColorConverter.cs",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Converters\\StatusColorConverter.cs",
+              "RelativeDocumentMoniker": "VolunteerHub\\Converters\\StatusColorConverter.cs",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Converters\\StatusColorConverter.cs",
+              "RelativeToolTip": "VolunteerHub\\Converters\\StatusColorConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T20:20:48.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VolunteersPage.xaml",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\VolunteersPage.xaml",
+              "RelativeDocumentMoniker": "VolunteerHub\\Views\\VolunteersPage.xaml",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\VolunteersPage.xaml",
+              "RelativeToolTip": "VolunteerHub\\Views\\VolunteersPage.xaml",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAqwLYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-23T20:19:13.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\AppShell.xaml",
+              "RelativeDocumentMoniker": "VolunteerHub\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\AppShell.xaml",
+              "RelativeToolTip": "VolunteerHub\\AppShell.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-23T20:14:53.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DashboardPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\DashboardPage.xaml.cs",
+              "RelativeDocumentMoniker": "VolunteerHub\\Views\\DashboardPage.xaml.cs",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\DashboardPage.xaml.cs",
+              "RelativeToolTip": "VolunteerHub\\Views\\DashboardPage.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T20:14:18.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DashboardPage.xaml",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\DashboardPage.xaml",
+              "RelativeDocumentMoniker": "VolunteerHub\\Views\\DashboardPage.xaml",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Views\\DashboardPage.xaml",
+              "RelativeToolTip": "VolunteerHub\\Views\\DashboardPage.xaml",
+              "ViewState": "AgIAACgBAAAAAAAAAAAmwEUBAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-23T20:13:36.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\App.xaml.cs",
+              "RelativeDocumentMoniker": "VolunteerHub\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\App.xaml.cs",
+              "RelativeToolTip": "VolunteerHub\\App.xaml.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwCYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T20:09:11.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MauiProgram.cs",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\MauiProgram.cs",
+              "RelativeDocumentMoniker": "VolunteerHub\\MauiProgram.cs",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\MauiProgram.cs",
+              "RelativeToolTip": "VolunteerHub\\MauiProgram.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABwAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T20:07:46.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "VolunteerHub\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "VolunteerHub\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAB4BAAAAAAAAAAAswCsBAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T20:06:40.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "VolunteerAssignment.cs",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Models\\VolunteerAssignment.cs",
+              "RelativeDocumentMoniker": "VolunteerHub\\Models\\VolunteerAssignment.cs",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Models\\VolunteerAssignment.cs",
+              "RelativeToolTip": "VolunteerHub\\Models\\VolunteerAssignment.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T19:52:46.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Project.cs",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Models\\Project.cs",
+              "RelativeDocumentMoniker": "VolunteerHub\\Models\\Project.cs",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Models\\Project.cs",
+              "RelativeToolTip": "VolunteerHub\\Models\\Project.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T19:52:10.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Volunteer.cs",
+              "DocumentMoniker": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Models\\Volunteer.cs",
+              "RelativeDocumentMoniker": "VolunteerHub\\Models\\Volunteer.cs",
+              "ToolTip": "C:\\Users\\ertan\\source\\repos\\VolunteerHub\\VolunteerHub\\Models\\Volunteer.cs",
+              "RelativeToolTip": "VolunteerHub\\Models\\Volunteer.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAIwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T19:50:37.412Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

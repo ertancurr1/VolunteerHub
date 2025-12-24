@@ -24,7 +24,7 @@ namespace VolunteerHub
             try
             {
                 // Uncomment the line below in case of database reset needed
-                // await _dbContext.Database.EnsureDeletedAsync();
+                 //await _dbContext.Database.EnsureDeletedAsync();
 
                 // Create database and apply migrations
                 await _dbContext.Database.EnsureCreatedAsync();

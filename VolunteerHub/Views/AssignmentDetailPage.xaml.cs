@@ -165,7 +165,7 @@ namespace VolunteerHub.Views
                         ProjectId = selectedProject.ProjectId,
                         AssignmentDate = AssignmentDatePicker.Date,
                         HoursContributed = hours,
-                        Notes = NotesEditor.Text?.Trim()
+                        Notes = string.IsNullOrWhiteSpace(NotesEditor.Text) ? null : NotesEditor.Text
                     };
 
                     _dbContext.VolunteerAssignments.Add(newAssignment);

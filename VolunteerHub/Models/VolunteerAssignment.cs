@@ -19,7 +19,7 @@ namespace VolunteerHub.Models
         public int HoursContributed { get; set; } = 0;
 
         [StringLength(200)]
-        public string Notes { get; set; }
+        public string? Notes { get; set; }
 
         // Navigation properties
         [ForeignKey("VolunteerId")]
